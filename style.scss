@@ -3,6 +3,9 @@
     padding: 0;
     outline: none;
 }
+body {
+    background-color: #020A18;
+}
 img {
     max-width: 100%;
 }
@@ -10,9 +13,6 @@ $font-main: 'Open Sans', sans-serif;
 $font-footer: 'Roboto';
 $bc: #09101e;
 $width: 1146px;
-body {
-   background-color: #020A18;
-}
 .container {
     margin: 0 auto;
     width: $width;
@@ -23,7 +23,7 @@ body {
     flex-wrap: wrap;
 }
 .header-link {
-    padding: 40px;
+    padding: 3%;
     display: block;
     font-family: $font-main;
     font-style: normal;
