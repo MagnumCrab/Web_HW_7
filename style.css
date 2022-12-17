@@ -12,10 +12,6 @@ body {
   background-color: #020A18;
 }
 
-.color {
-  background-color: #09101e;
-}
-
 .container {
   margin: 0 auto;
   width: 1146px;
@@ -369,28 +365,6 @@ body {
   padding-bottom: 25px;
 }
 
-.field {
-  color: #FFFFFF;
-  font-family: "Roboto";
-  -webkit-margin-start: 30px;
-          margin-inline-start: 30px;
-  -webkit-margin-end: 30px;
-          margin-inline-end: 30px;
-  -webkit-padding-before: 0.35em;
-          padding-block-start: 0.35em;
-  -webkit-padding-start: 0.75em;
-          padding-inline-start: 0.75em;
-  -webkit-padding-end: 0.75em;
-          padding-inline-end: 0.75em;
-  -webkit-padding-after: 0.625em;
-          padding-block-end: 0.625em;
-  min-inline-size: -webkit-min-content;
-  min-inline-size: -moz-min-content;
-  min-inline-size: min-content;
-  border-width: 5px;
-  border-style: groove;
-}
-
 .footer-header {
   font-family: "Roboto";
   font-style: normal;
@@ -431,7 +405,7 @@ body {
   margin-bottom: 25px;
 }
 
-@media (max-width: 849px) {
+@media (min-width: 376px) and (max-width: 1024px) {
   .flex-box {
     flex-wrap: wrap;
     justify-content: center;
@@ -493,18 +467,13 @@ body {
     flex-wrap: wrap;
     justify-content: center;
   }
-  .form {
-    flex-wrap: wrap;
-    justify-content: center;
-    width: 100%;
-  }
   .endpage-flex {
     flex-wrap: wrap;
     justify-content: center;
     gap: 74px;
   }
 }
-@media (max-width: 376px) {
+@media (max-width: 375px) {
   .flex-box {
     flex-wrap: wrap;
     justify-content: space-around;
@@ -552,6 +521,28 @@ body {
     text-align: center;
     gap: 30px;
   }
+  .footer-flex {
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+  }
+  .footer-pic {
+    width: 100vw;
+  }
+  .value-large {
+    display: none;
+  }
+  .value-small {
+    display: none;
+  }
+  .flex-perspective {
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+  }
   .awesome-heading {
     display: flex;
     justify-content: center;
@@ -569,12 +560,9 @@ body {
   .awe-pic {
     width: 75vh;
   }
-  .form {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
   .endpage-flex {
     flex-wrap: wrap;
+    align-items: center;
     justify-content: center;
     gap: 30px;
   }
