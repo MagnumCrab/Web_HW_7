@@ -3,35 +3,25 @@
     padding: 0;
     outline: none;
 }
-
 img {
     max-width: 100%;
 }
-
 $font-main: 'Open Sans', sans-serif;
 $font-footer: 'Roboto';
 $bc: #09101e;
 $width: 1146px;
-
 body {
    background-color: #020A18;
 }
-
-.color  {
-    background-color: $bc;
-}
-
 .container {
     margin: 0 auto;
     width: $width;
 }
-
 .nav {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
 }
-
 .header-link {
     padding: 40px;
     display: block;
@@ -43,22 +33,17 @@ body {
     color: #fff;
     text-decoration: none;
 }
-
 .header-link:hover {
     background-color: #3A68B8;
     border-radius: 5px; 
 }
-
 .main {
     margin-top: 160px;
 }
-
-
 .flex-box {
     display: flex;
     justify-content: space-between;
 }
-
 .next {
     font-weight: 600;
     font-size: 18px;
@@ -67,7 +52,6 @@ body {
     text-transform: uppercase;
     color: #3A68B8;
 }
-
 .main-headding {
     font-weight: 800;
     font-size: 55px;
@@ -76,8 +60,6 @@ body {
     font-family: 'Open Sans', sans-serif;
     width: 604px;
 }
-
-
 .main-dsc {
     font-weight: 600;
     font-size: 18px;
@@ -88,13 +70,11 @@ body {
     margin-bottom: 50px;
     font-family: 'Open Sans', sans-serif;
 }
-
 .get {
     background: #3A68B8;
     border-radius: 5px;
     margin-right: 20px;
 }
-
 .button-txt-flex {
     height: 100%;
     font-weight: 600;
@@ -106,14 +86,12 @@ body {
     align-items: center;
     padding: 0 30px;  
 }
-
 .watch {
     background: #3A68B8;
     border-radius: 5px;
     display: flex;
     align-items: center; 
 }
-
 .watch-txt {
     font-weight: 600;
     font-size: 20px;
@@ -122,12 +100,9 @@ body {
     color: #fff;
     margin-left: 10px;
 }
-
 .button-flex {
     display: flex;
 }
-
-
 .button-txt {
     padding: 15px 30px;
     font-weight: 600;
@@ -138,31 +113,24 @@ body {
     display: flex;
     align-items: center;
 }
-
 .get:hover, .watch:hover {
     outline: 4px solid #fff;
 }
-
-
 .footer {
     min-height: 250px;
     margin-top: 200px;
 }
-
 .footer-flex {
     display: flex;
     justify-content: space-between;
 }
-
 .apply {
     margin-top: 160px;
 }
-
 .flex-apply {
     display: flex;
     justify-content: space-between;
 }
-
 .apply-heading {
     font-weight: 800;
     font-size: 55px;
@@ -171,7 +139,6 @@ body {
     font-family: 'Open Sans', sans-serif;
     width: 604px;
 }
-
 .apply-dsc {
     font-weight: 600;
     font-size: 18px;
@@ -182,12 +149,10 @@ body {
     margin-bottom: 50px;
     font-family: $font-main;
 }
-
 .learn {
     background: #3A68B8;
     border-radius: 5px;
 }
-
 .learn-more {
     padding: 15px 30px;
     font-weight: 600;
@@ -198,28 +163,23 @@ body {
     display: flex;
     align-items: center;
 }
-
 .perspective {
     margin-top: 265px;
 }
-
 .flex-perspective {
     display: flex;
     justify-content: space-between;
 }
-
 .perspective-txt {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
-
 .wellcome {
     Width: 98px;
     Height: 103px;
 }
-
 .perspective-heading {
     font-family: 'Open Sans';
     font-style: normal;
@@ -231,7 +191,6 @@ body {
     margin-top: 30px;
     Width: 302px;
 }
-
 .perspective-text {
     font-family: 'Open Sans';
     font-style: normal;
@@ -244,40 +203,33 @@ body {
     margin-bottom: 30px;
     Width: 302px;
 }
-
 .value {
     margin-top: 30px;
 }
-
 .flex-value {
     display: flex;
     justify-content: space-between;
 }
-
 .value-large {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
-
 .value-small {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
-
 .wellcome-large {
     Width: 306px;
     Height: 322px;
 }
-
 .wellcome-small {
     Width: 98px;
     Height: 103px;
 }
-
 .heading-small {
     font-family: 'Open Sans';
     font-style: normal;
@@ -289,7 +241,6 @@ body {
     margin-top: 30px;
     Width: 302px;
 }
-
 .small-txt {
     font-family: 'Open Sans';
     font-style: normal;
@@ -302,7 +253,6 @@ body {
     margin-bottom: 30px;
     Width: 302px;
 }
-
 .large-heading {
     font-family: 'Open Sans';
     font-style: normal;
@@ -315,7 +265,6 @@ body {
     margin-top: 30px;
     margin-bottom: 30px;
 }
-
 .large-txt {
     font-family: 'Open Sans';
     font-style: normal;
@@ -328,17 +277,14 @@ body {
     margin-top: 30px;
     margin-bottom: 30px;
 }
-
 .awesome {
     margin-top: 240px;
     padding-bottom: 100px;
 }
-
 .flex-awesome {
     display: flex;
     justify-content: space-between;
 }
-
 .awesome-heading {
     font-family: 'Open Sans';
     font-style: normal;
@@ -349,7 +295,6 @@ body {
     margin-bottom: 20px;
     width: 548px;
 }
-
 .awesom-dsc {
     font-family: 'Open Sans';
     font-style: normal;
@@ -360,38 +305,20 @@ body {
     margin-top: 20px;
     width: 460px;
 }
-
 .awesome-pic {
     width: 573px;
     height: 492px;
 }
-
 .endpage {
     margin-top: 220px;
     background-color: #070f1d;
 }
-
 .endpage-flex {
     display: flex;
     justify-content: space-between;
     padding-top: 50px;
     padding-bottom: 25px;
 }
-
-.field {
-    color: #FFFFFF;
-    font-family: $font-footer;
-    margin-inline-start: 30px;
-    margin-inline-end: 30px;
-    padding-block-start: 0.35em;
-    padding-inline-start: 0.75em;
-    padding-inline-end: 0.75em;
-    padding-block-end: 0.625em;
-    min-inline-size: min-content;
-    border-width: 5px;
-    border-style: groove;
-}
-
 .footer-header {
     font-family: $font-footer;
     font-style: normal;
@@ -401,7 +328,6 @@ body {
     color: #FFFFFF;
     margin-bottom: 33px;
 }
-
 .inform {
     font-family: $font-footer;
     font-style: normal;
@@ -411,7 +337,6 @@ body {
     color: #FFFFFF;
     margin-bottom: 25px;
 }
-
 .endpage-text {
     font-family: $font-footer;
     font-style: italic;
@@ -421,7 +346,6 @@ body {
     color: #FFFFFF;
     width: 261px;
 }
-
 .footer-links {
     font-family: $font-footer;
     font-style: normal;
@@ -431,8 +355,7 @@ body {
     color: #FFFFFF;
     margin-bottom: 25px;
 }
-
-@media (max-width: 849px) {
+@media (min-width: 376px) and (max-width: 1024px) {
     .flex-box {
         flex-wrap: wrap;
         justify-content: center;
@@ -494,18 +417,13 @@ body {
         flex-wrap: wrap;
         justify-content: center;
     }
-    .form {
-        flex-wrap: wrap;
-        justify-content: center;
-        width: 100%;
-    }
     .endpage-flex {
         flex-wrap: wrap;
         justify-content: center;
         gap: 74px;
     }
 }
-@media (max-width: 376px) {
+@media (max-width: 375px) {
     .flex-box {
         flex-wrap: wrap;
         justify-content: space-around;
@@ -553,6 +471,28 @@ body {
         text-align: center;
         gap: 30px;
     }
+    .footer-flex {
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+    }
+    .footer-pic {
+        width: 100vw;
+    }
+    .value-large {
+        display: none;
+      }
+    .value-small {
+        display: none;
+    }
+    .flex-perspective {
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        gap: 30px;
+    }
     .awesome-heading{
         display: flex;
         justify-content: center;
@@ -570,12 +510,9 @@ body {
     .awe-pic {
         width: 75vh;
     }
-    .form {
-        flex-wrap: wrap;
-        justify-content: center;
-    }
     .endpage-flex {
         flex-wrap: wrap;
+        align-items: center;
         justify-content: center;
         gap: 30px;
     }
