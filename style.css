@@ -4,17 +4,17 @@
   outline: none;
 }
 
-img {
-  max-width: 100%;
-}
-
 body {
   background-color: #020A18;
 }
 
+img {
+  max-width: 100%;
+}
+
 .container {
   margin: 0 auto;
-  width: 1146px;
+  max-width: 1146px;
 }
 
 .nav {
@@ -24,7 +24,7 @@ body {
 }
 
 .header-link {
-  padding: 40px;
+  padding: 3%;
   display: block;
   font-family: "Open Sans", sans-serif;
   font-style: normal;
@@ -46,6 +46,7 @@ body {
 
 .flex-box {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 
@@ -64,7 +65,7 @@ body {
   line-height: 130%;
   color: #fff;
   font-family: "Open Sans", sans-serif;
-  width: 604px;
+  max-width: 604px;
 }
 
 .main-dsc {
@@ -73,7 +74,7 @@ body {
   line-height: 160%;
   color: #ccc;
   margin-top: 40px;
-  width: 558px;
+  max-width: 558px;
   margin-bottom: 50px;
   font-family: "Open Sans", sans-serif;
 }
@@ -156,7 +157,7 @@ body {
   line-height: 130%;
   color: #fff;
   font-family: "Open Sans", sans-serif;
-  width: 604px;
+  max-width: 604px;
 }
 
 .apply-dsc {
@@ -165,7 +166,7 @@ body {
   line-height: 160%;
   color: #ccc;
   margin-top: 40px;
-  width: 558px;
+  max-width: 558px;
   margin-bottom: 50px;
   font-family: "Open Sans", sans-serif;
 }
@@ -203,7 +204,7 @@ body {
 }
 
 .wellcome {
-  Width: 98px;
+  max-Width: 98px;
   Height: 103px;
 }
 
@@ -216,7 +217,7 @@ body {
   text-align: center;
   color: #FFFFFF;
   margin-top: 30px;
-  Width: 302px;
+  max-Width: 302px;
 }
 
 .perspective-text {
@@ -229,7 +230,7 @@ body {
   color: #FFFFFF;
   margin-top: 30px;
   margin-bottom: 30px;
-  Width: 302px;
+  max-Width: 302px;
 }
 
 .value {
@@ -256,12 +257,12 @@ body {
 }
 
 .wellcome-large {
-  Width: 306px;
+  max-Width: 306px;
   Height: 322px;
 }
 
 .wellcome-small {
-  Width: 98px;
+  max-Width: 98px;
   Height: 103px;
 }
 
@@ -274,7 +275,7 @@ body {
   text-align: center;
   color: #FFFFFF;
   margin-top: 30px;
-  Width: 302px;
+  max-Width: 302px;
 }
 
 .small-txt {
@@ -287,7 +288,7 @@ body {
   color: #FFFFFF;
   margin-top: 30px;
   margin-bottom: 30px;
-  Width: 302px;
+  max-Width: 302px;
 }
 
 .large-heading {
@@ -298,7 +299,7 @@ body {
   line-height: 125%;
   text-align: center;
   color: #FFFFFF;
-  Width: 694px;
+  max-Width: 694px;
   margin-top: 30px;
   margin-bottom: 30px;
 }
@@ -311,7 +312,7 @@ body {
   line-height: 160%;
   text-align: center;
   color: #FFFFFF;
-  Width: 694px;
+  max-Width: 694px;
   margin-top: 30px;
   margin-bottom: 30px;
 }
@@ -334,7 +335,7 @@ body {
   line-height: 130%;
   color: #FFFFFF;
   margin-bottom: 20px;
-  width: 548px;
+  max-width: 548px;
 }
 
 .awesom-dsc {
@@ -345,11 +346,11 @@ body {
   line-height: 160%;
   color: #FFFFFF;
   margin-top: 20px;
-  width: 460px;
+  max-width: 460px;
 }
 
 .awesome-pic {
-  width: 573px;
+  max-width: 573px;
   height: 492px;
 }
 
@@ -392,7 +393,7 @@ body {
   font-size: 14px;
   line-height: 16px;
   color: #FFFFFF;
-  width: 261px;
+  max-width: 261px;
 }
 
 .footer-links {
@@ -406,15 +407,12 @@ body {
 }
 
 @media (min-width: 376px) and (max-width: 1024px) {
+  * {
+    padding: 3% 2% 0;
+  }
   .flex-box {
     flex-wrap: wrap;
     justify-content: center;
-  }
-  .next {
-    font-size: 16px;
-  }
-  .main-headding {
-    font-size: 48px;
   }
   .main-pic {
     display: flex;
@@ -474,9 +472,23 @@ body {
   }
 }
 @media (max-width: 375px) {
+  * {
+    padding: 3% 2% 0;
+  }
   .flex-box {
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
+  }
+  .main-txt {
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+  }
+  .next {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
   }
   .header-link {
     font-size: 14px;
@@ -487,11 +499,13 @@ body {
     text-align: center;
   }
   .main-headding {
-    font-size: 28px;
+    font-size: 25px;
     text-align: center;
     width: 100%;
   }
   .main-dsc {
+    flex-wrap: wrap;
+    justify-content: center;
     text-align: center;
   }
   .main-pic {
@@ -508,6 +522,7 @@ body {
     margin-right: 0;
   }
   .button-flex {
+    display: flex;
     flex-direction: column;
     align-items: center;
   }
@@ -515,7 +530,14 @@ body {
     padding: 20px;
   }
   .flex-apply {
-    font-size: 24px;
+    font-size: 25px;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    gap: 30px;
+  }
+  .apply-heading {
+    font-size: 25px;
     flex-wrap: wrap;
     justify-content: center;
     text-align: center;
@@ -544,6 +566,7 @@ body {
     gap: 30px;
   }
   .awesome-heading {
+    font-size: 25px;
     display: flex;
     justify-content: center;
   }
