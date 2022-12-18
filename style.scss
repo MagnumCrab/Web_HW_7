@@ -12,10 +12,9 @@ img {
 $font-main: 'Open Sans', sans-serif;
 $font-footer: 'Roboto';
 $bc: #09101e;
-$width: 1146px;
 .container {
     margin: 0 auto;
-    width: $width;
+    max-width: 1146px;
 }
 .nav {
     display: flex;
@@ -42,6 +41,7 @@ $width: 1146px;
 }
 .flex-box {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 .next {
@@ -58,7 +58,7 @@ $width: 1146px;
     line-height: 130%;
     color: #fff;
     font-family: 'Open Sans', sans-serif;
-    width: 604px;
+    max-width: 604px;
 }
 .main-dsc {
     font-weight: 600;
@@ -66,7 +66,7 @@ $width: 1146px;
     line-height: 160%;
     color: #ccc;
     margin-top: 40px;
-    width: 558px;
+    max-width: 558px;
     margin-bottom: 50px;
     font-family: 'Open Sans', sans-serif;
 }
@@ -137,7 +137,7 @@ $width: 1146px;
     line-height: 130%;
     color: #fff;
     font-family: 'Open Sans', sans-serif;
-    width: 604px;
+    max-width: 604px;
 }
 .apply-dsc {
     font-weight: 600;
@@ -145,7 +145,7 @@ $width: 1146px;
     line-height: 160%;
     color: #ccc;
     margin-top: 40px;
-    width: 558px;
+    max-width: 558px;
     margin-bottom: 50px;
     font-family: $font-main;
 }
@@ -177,7 +177,7 @@ $width: 1146px;
     flex-direction: column;
 }
 .wellcome {
-    Width: 98px;
+    max-Width: 98px;
     Height: 103px;
 }
 .perspective-heading {
@@ -189,7 +189,7 @@ $width: 1146px;
     text-align: center;
     color: #FFFFFF;
     margin-top: 30px;
-    Width: 302px;
+    max-Width: 302px;
 }
 .perspective-text {
     font-family: 'Open Sans';
@@ -201,7 +201,7 @@ $width: 1146px;
     color: #FFFFFF;
     margin-top: 30px;
     margin-bottom: 30px;
-    Width: 302px;
+    max-Width: 302px;
 }
 .value {
     margin-top: 30px;
@@ -223,11 +223,11 @@ $width: 1146px;
     flex-direction: column;
 }
 .wellcome-large {
-    Width: 306px;
+    max-Width: 306px;
     Height: 322px;
 }
 .wellcome-small {
-    Width: 98px;
+    max-Width: 98px;
     Height: 103px;
 }
 .heading-small {
@@ -239,7 +239,7 @@ $width: 1146px;
     text-align: center;
     color: #FFFFFF;
     margin-top: 30px;
-    Width: 302px;
+    max-Width: 302px;
 }
 .small-txt {
     font-family: 'Open Sans';
@@ -251,7 +251,7 @@ $width: 1146px;
     color: #FFFFFF;
     margin-top: 30px;
     margin-bottom: 30px;
-    Width: 302px;
+    max-Width: 302px;
 }
 .large-heading {
     font-family: 'Open Sans';
@@ -261,7 +261,7 @@ $width: 1146px;
     line-height: 125%;
     text-align: center;
     color: #FFFFFF;
-    Width: 694px;
+    max-Width: 694px;
     margin-top: 30px;
     margin-bottom: 30px;
 }
@@ -273,7 +273,7 @@ $width: 1146px;
     line-height: 160%;
     text-align: center;
     color: #FFFFFF;
-    Width: 694px;
+    max-Width: 694px;
     margin-top: 30px;
     margin-bottom: 30px;
 }
@@ -293,7 +293,7 @@ $width: 1146px;
     line-height: 130%;
     color: #FFFFFF;
     margin-bottom: 20px;
-    width: 548px;
+    max-width: 548px;
 }
 .awesom-dsc {
     font-family: 'Open Sans';
@@ -303,10 +303,10 @@ $width: 1146px;
     line-height: 160%;
     color: #FFFFFF;
     margin-top: 20px;
-    width: 460px;
+    max-width: 460px;
 }
 .awesome-pic {
-    width: 573px;
+    max-width: 573px;
     height: 492px;
 }
 .endpage {
@@ -344,7 +344,7 @@ $width: 1146px;
     font-size: 14px;
     line-height: 16px;
     color: #FFFFFF;
-    width: 261px;
+    max-width: 261px;
 }
 .footer-links {
     font-family: $font-footer;
@@ -356,16 +356,13 @@ $width: 1146px;
     margin-bottom: 25px;
 }
 @media (min-width: 376px) and (max-width: 1024px) {
+    * {
+        padding: 3% 2% 0;
+    }
     .flex-box {
         flex-wrap: wrap;
         justify-content: center;
-      }
-    .next {
-        font-size: 16px;
-      }
-    .main-headding {
-        font-size: 48px;
-      }
+    }
     .main-pic {
         display: flex;
         justify-content: center;
@@ -424,9 +421,23 @@ $width: 1146px;
     }
 }
 @media (max-width: 375px) {
+    * {
+        padding: 3% 2% 0;
+    }
     .flex-box {
         flex-wrap: wrap;
-        justify-content: space-around;
+        justify-content: center;
+    }
+    .main-txt {
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+    }
+    .next {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
     }
     .header-link {
         font-size: 14px;
@@ -437,11 +448,13 @@ $width: 1146px;
         text-align: center;
     }
     .main-headding {
-        font-size: 28px;
+        font-size: 25px;
         text-align: center;
         width: 100%;
     }
     .main-dsc {
+        flex-wrap: wrap;
+        justify-content: center;
         text-align: center;
     }
     .main-pic {
@@ -458,6 +471,7 @@ $width: 1146px;
         margin-right: 0;
     }
     .button-flex {
+        display: flex;
         flex-direction: column;
         align-items: center;
     }
@@ -465,7 +479,14 @@ $width: 1146px;
         padding: 20px;
     }
     .flex-apply {
-        font-size: 24px;
+        font-size: 25px;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+        gap: 30px;
+    }
+    .apply-heading {
+        font-size: 25px;
         flex-wrap: wrap;
         justify-content: center;
         text-align: center;
@@ -493,7 +514,8 @@ $width: 1146px;
         justify-content: center;
         gap: 30px;
     }
-    .awesome-heading{
+    .awesome-heading {
+        font-size: 25px;
         display: flex;
         justify-content: center;
     }
